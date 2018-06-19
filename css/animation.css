@@ -1,0 +1,119 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+.mouse_wave {
+	display: block;
+	margin: 0 auto;
+	width: 24px;
+	height: 100px;
+    position: absolute;
+    top: 80%;
+}
+.scroll_arrows
+{
+  display: block;
+  width: 5px;
+  height: 5px;
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+  transform: rotate(45deg);
+
+  border-right: 4px solid white;
+  border-bottom: 4px solid white;
+  margin: 0 0 3px 4px;
+  width: 40px;
+  height: 40px;
+}
+.one
+{
+  margin-top: 1px;
+}
+.one, .two, .three
+{
+    -webkit-animation: mouse-wave 1s infinite;
+    -moz-animation: mouse-wave 1s infinite;
+}
+.one
+{
+  -webkit-animation-delay: .1s;
+  -moz-animation-delay: .1s;
+  -webkit-animation-direction: alternate;
+}
+
+.two
+{
+  -webkit-animation-delay: .2s;
+  -moz-animation-delay: .2s;
+  -webkit-animation-direction: alternate;
+  margin-top: -6px;
+}
+
+.three
+{
+  -webkit-animation-delay: .3s;
+  -moz-animation-delay: .3s;
+  -webkit-animation-direction: alternate;
+  margin-top: -6px;
+}
+.button-anim  button {
+  padding: 10px 20px;
+  background: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.button-anim button:after , .button-anim button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #000;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+.button-anim button:after{
+  -webkit-transform: translate(3px, 3px);
+  transform: translate(3px, 3px);
+}
+.button-anim button:before {
+  -webkit-transform: translate(-3px, -3px);
+  transform: translate(-3px, -3px);
+}
+.button-anim button:hover:after ,.button-anim button:hover:before {
+  -webkit-transform: translate(0);
+  transform: translate(0);
+}
+
+@-webkit-keyframes mouse-wave {
+
+  0%   { opacity: 0;}
+  50%  { opacity: .5;}
+  100% { opacity: 1;}
+}
+
+@-moz-keyframes mouse-wave {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@-o-keyframes mouse-wave {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}
+@keyframes mouse-wave {
+
+  0%   { opacity: 0; }
+  50%  { opacity: .5; }
+  100% { opacity: 1; }
+}

@@ -1,0 +1,214 @@
+#logoconnect {
+    height: 270px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+@media screen and (max-height: 650px) {
+    #logoconnect {
+        height:160px;
+    }
+}
+
+#erreur {
+    margin-top: 15%;
+}
+
+#form {
+    margin-top:10px;
+}
+
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.show .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.navbar {
+    padding-top:0px;
+    padding-right:0px;
+    padding-bottom:0px;
+    padding-left: 20px;
+    line-height: 1,5px;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    z-index: 1030
+}
+
+.navbar-toggler-right {
+    right: 0;
+}
+
+#btnconnect {
+    height: 40px;
+    border-radius: 0px;
+    width:180px;
+}
+
+#bienvenue {
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 60px;
+}
+
+.card-header {
+    background-color: #6BB9F0;
+}
+
+@media screen and (max-width: 1283px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #card2 {
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+}
+
+.row {
+    margin:0px;
+    padding: 0px;
+}
+
+.nav-pills .nav-link {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.sidebar {
+    position: absolute;
+    height: 1387px;
+    top:  0px;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    box-shadow: 6px 0px 20px black;
+  }
+
+    @media screen and (max-width: 575px) {
+        .sidebar {
+            position: static;
+            overflow-y: visible !important;
+            overflow-x: visible !important;
+            height: 0 !important;
+            width: 0 !important;
+        }
+        .sidebar .nav-item {
+            height: inherit !important;
+        }
+        .nav-link.active {
+            width: inherit !important;
+        }
+        .sidebar .nav-item {
+            display: block !important;
+        }
+    }
+
+    /* Sidebar navigation */
+    .sidebar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .sidebar .nav {
+        margin-bottom: 20px;
+    }
+
+    .sidebar .nav-item {
+        height: 10vh;
+    }
+
+    .sidebar .nav-item + .nav-item {
+        margin-left: 0;
+    }
+    .sidebar .nav-item {
+        display: flex;
+    }
+
+    .sidebar {
+        border-radius: 0;
+    }
+
+    .placeholders {
+        padding-bottom: 3rem;
+    }
+    .nav-link.active{
+        width: 34vw;
+    }
+
+    .placeholder img {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    th {
+        text-align: center;
+    }
+
+    main {
+        margin-bottom: 150px;
+    }
+
+    .form-control, #sendstudent {
+        margin-bottom: 25px;
+    }
+
+    select, .custom-select {
+        margin-bottom: 25px;
+        width:100%;
+    }
+
+    #btntrier {
+        margin-bottom: 50px;
+    }
+
+    .results tr[visible='false'],
+    .no-result{
+        display:none;
+    }
+
+    .results tr[visible='true']{
+        display:table-row;
+    }
+
+    .counter{
+        color:#ccc;
+        height: 38px;
+    }
+
+    #searchbar {
+        height: 38px;
+    }
+
+    #classe {
+        padding: 0px 50px 0px 50px;
+    }
